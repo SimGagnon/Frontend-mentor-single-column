@@ -19,4 +19,54 @@ body {
   font-size: 20px;
   font-family: "Libre Franklin", sans-serif;
 }
+
+.main {
+  text-align: center;
+  height: 100vh;
+}
+
+.main_container {
+  min-width: 23.4375rem;
+}
+
+.main_header h1 {
+  font-weight: 300;
+  font-size: 1.1em;
+  color: #969696;
+}
+
+.main_header h1 span {
+  color: #151f29;
+  font-weight: bold;
+}
+
+.main_header h4 {
+  font-size: 0.6em;
+  color: #151f29;
+  font-weight: lighter;
+}
+
+.main_header form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_header form button {
+  background: #4f7df3;
+  color: white;
+  font-size: 0.6em;
+  font-weight: 600;
+  border: none;
+  padding: 0.9375rem 7.0625rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */

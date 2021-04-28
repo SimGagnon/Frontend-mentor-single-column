@@ -1,0 +1,45 @@
+.main {
+    text-align: center;
+    height: 100vh;
+
+    &_container {
+        min-width: 23.4375rem;
+    }
+
+    &_header {
+
+        h1 {
+            font-weight: 300;
+            font-size: 1.1em;
+            color: $Gray;
+
+            span {
+                color: $VeryDarkBlue;
+                font-weight: bold;
+            }
+        }
+
+        h4 {
+            font-size: 0.6em;
+            color: $VeryDarkBlue;
+            font-weight: lighter;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            button {
+                background: $Blue;
+                color: white;
+                font-size: 0.6em;
+                font-weight: 600;
+                border: none;
+                padding: 0.9375rem 7.0625rem;
+                border-radius: 2rem;
+                cursor: pointer;
+            }
+        }
+    }
+}
