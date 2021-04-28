@@ -20,25 +20,30 @@ body {
   font-family: "Libre Franklin", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .main {
   text-align: center;
   height: 100vh;
   width: 23.4375rem;
   margin: auto;
+  padding: 0 1.75rem;
+  padding-top: 5.3125rem;
 }
 
-.main_container {
-  margin: auto;
-}
-
-.main_header {
-  margin-bottom: 4.5rem;
+.main_header img {
+  width: 3.5rem;
+  margin-bottom: 2.75rem;
 }
 
 .main_header h1 {
   font-weight: 300;
   font-size: 1.1em;
   color: #969696;
+  margin-bottom: 1.1rem;
 }
 
 .main_header h1 span {
@@ -73,7 +78,7 @@ body {
   border: #c2d3ff 1px solid;
   font-size: 0.6em;
   padding-left: 2rem;
-  margin-top: 2.1875rem;
+  margin-top: 2rem;
 }
 
 .main_header form input::-webkit-input-placeholder {
@@ -107,5 +112,22 @@ body {
 
 .main_image img {
   width: 100%;
+  margin-bottom: 7.5rem;
+}
+
+.main_socials h4 {
+  font-size: 0.5em;
+  color: #969696;
+  font-weight: 300;
+}
+
+.main_socials .socials_container {
+  color: #4f7df3;
+}
+
+.main_socials ion-icon {
+  padding: 0.625rem;
+  border: 0.92px solid #4C7BF315;
+  border-radius: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
