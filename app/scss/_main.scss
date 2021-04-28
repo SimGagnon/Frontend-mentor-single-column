@@ -1,12 +1,16 @@
 .main {
     text-align: center;
     height: 100vh;
+    width: 23.4375rem;
+    margin: auto;
 
     &_container {
-        min-width: 23.4375rem;
+        margin: auto;
     }
 
     &_header {
+
+        margin-bottom: 4.5rem;
 
         h1 {
             font-weight: 300;
@@ -30,6 +34,21 @@
             flex-direction: column;
             align-items: center;
 
+            input {
+                height: 2.5rem;
+                width: 17.5rem;
+                font-weight: lighter;
+                border-radius: 2rem;
+                border: $PaleBlue 1px solid;
+                font-size: 0.6em;
+                padding-left: 2rem;
+                margin-top: 2.1875rem;
+                
+                &::placeholder {
+                    color: $Gray;
+                }
+            }
+
             button {
                 background: $Blue;
                 color: white;
@@ -39,7 +58,15 @@
                 padding: 0.9375rem 7.0625rem;
                 border-radius: 2rem;
                 cursor: pointer;
+                margin-bottom: 4.5rem;
+                margin-top: 0.625rem;
             }
+        }
+    }
+
+    &_image {
+        img {
+            width: 100%;
         }
     }
 }
