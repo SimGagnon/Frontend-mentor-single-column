@@ -1,6 +1,5 @@
 .main {
     text-align: center;
-    height: 100vh;
     width: 23.4375rem;
     margin: auto;
     padding: 0 1.75rem;
@@ -9,7 +8,7 @@
 
     &_header {
 
-        img {
+        .logo {
             width: 3.5rem;
             margin-bottom: 2.75rem;
         }
@@ -52,9 +51,16 @@
                 }
             }
 
+            small {
+                color: $SoftRed;
+                margin-top: 0.5rem;
+                font-size: 0.6em;
+                display: none;
+            }
+
             button {
                 background: $Blue;
-                color: white;
+                color: hsl(0, 0%, 100%);
                 font-size: 0.6em;
                 font-weight: 600;
                 border: none;
@@ -63,6 +69,7 @@
                 cursor: pointer;
                 margin-bottom: 4.5rem;
                 margin-top: 0.625rem;
+                box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.314);
             }
         }
     }
@@ -86,13 +93,81 @@
         .socials_container {
             color: $Blue;
             margin-bottom: 1.875rem;
+
+            ion-icon {
+                padding: 0.625rem;
+                border: 0.92px solid hsla(223, 87%, 63%, 0.314);
+                border-radius: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .main {
+        width: 40rem;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 3.125rem;
+        height: 100%;
+
+        &_header { 
+
+            .logo {
+                width: 5.5625rem;
+                height: 1.5625rem;
+            }
+
+            h1 {
+                font-size: 2.4em;
+            }
+
+            h4 {
+                font-size: 1em;
+            }
+
+            form {
+                display: block;
+                margin-top: 2.5rem;
+                margin-bottom: 5.875rem;
+                
+
+                input {
+                    margin: 0;
+                    width: 26.3125rem;
+                    height: 3.5rem;
+                    font-size: 0.8em;
+                }
+
+                button {
+                    margin: 0;
+                    padding: 1.18rem 3.875rem;
+                    font-size: 0.8em;
+                }
+            }  
         }
 
-        ion-icon {
-            padding: 0.625rem;
-            border: 0.92px solid #4C7BF315;
-            border-radius: 2rem;
+        &_image {
+
+            img {
+                margin-bottom: 4.375rem;
+            }
+
         }
-    
+
+        &_socials {
+
+            h4 {
+                font-size: 0.6em;
+            }
+            
+            .socials_container {
+                margin-bottom: 1.5625rem;
+
+                a:not(:last-child) {
+                    margin-right: 0.4rem
+                }
+            }
+        }
     }
 }

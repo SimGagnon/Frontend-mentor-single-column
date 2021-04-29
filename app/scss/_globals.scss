@@ -22,3 +22,13 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+form .error {
+    input {
+        border: hsl(0, 100%, 50%) 1px solid;
+
+        small {
+            display: block;
+        }
+    }
+}
