@@ -48,7 +48,7 @@
                 margin-top: 2rem;
                 
                 &::placeholder {
-                    color: $Gray;
+                    color: $PaleBlue;
                 }
             }
 
@@ -85,6 +85,7 @@
 
         .socials_container {
             color: $Blue;
+            margin-bottom: 1.875rem;
         }
 
         ion-icon {

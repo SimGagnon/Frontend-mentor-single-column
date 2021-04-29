@@ -82,19 +82,19 @@ a {
 }
 
 .main_header form input::-webkit-input-placeholder {
-  color: #969696;
+  color: #c2d3ff;
 }
 
 .main_header form input:-ms-input-placeholder {
-  color: #969696;
+  color: #c2d3ff;
 }
 
 .main_header form input::-ms-input-placeholder {
-  color: #969696;
+  color: #c2d3ff;
 }
 
 .main_header form input::placeholder {
-  color: #969696;
+  color: #c2d3ff;
 }
 
 .main_header form button {
@@ -123,6 +123,7 @@ a {
 
 .main_socials .socials_container {
   color: #4f7df3;
+  margin-bottom: 1.875rem;
 }
 
 .main_socials ion-icon {
