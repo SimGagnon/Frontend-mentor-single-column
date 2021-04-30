@@ -25,6 +25,19 @@ a {
   color: inherit;
 }
 
+:focus {
+  outline-color: #4f7df3;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
 .main {
   text-align: center;
   width: 23.4375rem;
@@ -34,8 +47,12 @@ a {
 }
 
 .main_header .logo {
-  width: 3.5rem;
+  display: inline-block;
   margin-bottom: 2.75rem;
+}
+
+.main_header .logo img {
+  width: 3.5rem;
 }
 
 .main_header h1 {
@@ -143,6 +160,10 @@ a {
   margin-bottom: 1.875rem;
 }
 
+.main_socials .socials_container a:not(:last-child) {
+  margin-right: 0.4rem;
+}
+
 .main_socials .socials_container ion-icon {
   padding: 0.625rem;
   border: 0.92px solid rgba(79, 125, 243, 0.314);
@@ -162,8 +183,8 @@ a {
     padding-bottom: 3.125rem;
     height: 100%;
   }
-  .main_header .logo {
-    width: 5.5625rem;
+  .main_header .logo img {
+    width: 5.4375rem;
     height: 1.5625rem;
   }
   .main_header h1 {
@@ -196,6 +217,7 @@ a {
   .main_header form small {
     text-align: left;
     padding-left: 2rem;
+    font-size: 0.6em;
   }
   .main_header form button {
     margin: 0;
@@ -210,9 +232,6 @@ a {
   }
   .main_socials .socials_container {
     margin-bottom: 1.5625rem;
-  }
-  .main_socials .socials_container a:not(:last-child) {
-    margin-right: 0.4rem;
   }
 }
 

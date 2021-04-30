@@ -9,8 +9,12 @@
     &_header {
 
         .logo {
-            width: 3.5rem;
+            display:inline-block;
             margin-bottom: 2.75rem;
+
+            img {
+                width: 3.5rem;
+            }
         }
 
         h1 {
@@ -105,6 +109,10 @@
             color: $Blue;
             margin-bottom: 1.875rem;
 
+            a:not(:last-child) {
+                margin-right: 0.4rem
+            }
+
             ion-icon {
                 padding: 0.625rem;
                 border: 0.92px solid hsla(223, 87%, 63%, 0.314);
@@ -130,8 +138,10 @@
         &_header { 
 
             .logo {
-                width: 5.5625rem;
-                height: 1.5625rem;
+                img {
+                    width: 5.4375rem;
+                    height: 1.5625rem;
+                }
             }
 
             h1 {
@@ -148,7 +158,6 @@
                 align-items: baseline;
                 margin-top: 2.5rem;
                 margin-bottom: 5.875rem;
-                
 
                 input {
                     margin: 0;
@@ -161,6 +170,7 @@
                 small {
                     text-align: left;
                     padding-left: 2rem;
+                    font-size: 0.6em;
                 }
 
                 button {
@@ -187,15 +197,10 @@
             
             .socials_container {
                 margin-bottom: 1.5625rem;
-
-                a:not(:last-child) {
-                    margin-right: 0.4rem
-                }
             }
         }
     }
 }
-
 
 .error {
     input {
