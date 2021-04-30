@@ -25,14 +25,6 @@ a {
   color: inherit;
 }
 
-form .error input {
-  border: red 1px solid;
-}
-
-form .error input small {
-  display: block;
-}
-
 .main {
   text-align: center;
   width: 23.4375rem;
@@ -104,10 +96,15 @@ form .error input small {
   color: #c2d3ff;
 }
 
+.main_header form input:focus {
+  border-radius: 2rem;
+}
+
 .main_header form small {
   color: #f96262;
   margin-top: 0.5rem;
-  font-size: 0.6em;
+  font-size: 0.5em;
+  font-style: italic;
   display: none;
 }
 
@@ -124,6 +121,10 @@ form .error input small {
   margin-top: 0.625rem;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.314);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.314);
+}
+
+.main_header form button:hover {
+  background: #7096f5;
 }
 
 .main_image img {
@@ -148,7 +149,12 @@ form .error input small {
   border-radius: 2rem;
 }
 
-@media screen and (min-width: 600px) {
+.main_socials .socials_container ion-icon:hover {
+  color: white;
+  background: #4f7df3;
+}
+
+@media screen and (min-width: 40rem) {
   .main {
     width: 40rem;
     padding-left: 0;
@@ -167,7 +173,16 @@ form .error input small {
     font-size: 1em;
   }
   .main_header form {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     margin-top: 2.5rem;
     margin-bottom: 5.875rem;
   }
@@ -176,6 +191,11 @@ form .error input small {
     width: 26.3125rem;
     height: 3.5rem;
     font-size: 0.8em;
+    margin-right: 1rem;
+  }
+  .main_header form small {
+    text-align: left;
+    padding-left: 2rem;
   }
   .main_header form button {
     margin: 0;
@@ -194,5 +214,13 @@ form .error input small {
   .main_socials .socials_container a:not(:last-child) {
     margin-right: 0.4rem;
   }
+}
+
+.error input {
+  border: #ff5263 1px solid !important;
+}
+
+.error small {
+  display: block !important;
 }
 /*# sourceMappingURL=style.css.map */

@@ -3,11 +3,11 @@ const form = document.querySelector('form');
 
 
 
-form.addEventListener('submit' , function(e) {
+form.addEventListener('submit', function (e) {
 
     const emailValue = email.value;
     e.preventDefault();
-    
+
     if (!validateEmail(emailValue)) {
         form.classList.add('error');
     } else {
