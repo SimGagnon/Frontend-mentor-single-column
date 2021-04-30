@@ -168,6 +168,7 @@ a {
   padding: 0.5rem;
   border: 0.92px solid rgba(79, 125, 243, 0.314);
   border-radius: 2rem;
+  width: 1rem;
 }
 
 .main_socials .socials_container ion-icon:hover {
@@ -221,7 +222,7 @@ a {
   }
   .main_header form button {
     margin: 0;
-    padding: 1.18rem 3.875rem !important;
+    padding: 1.18rem 3.875rem;
     font-size: 0.8em;
   }
   .main_image img {

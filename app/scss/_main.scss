@@ -117,6 +117,7 @@
                 padding: 0.5rem;
                 border: 0.92px solid hsla(223, 87%, 63%, 0.314);
                 border-radius: 2rem;
+                width: 1rem;
 
                 &:hover {
                  color: hsl(0, 0%, 100%);  
@@ -175,7 +176,7 @@
 
                 button {
                     margin: 0;
-                    padding: 1.18rem 3.875rem !important;
+                    padding: 1.18rem 3.875rem;
                     font-size: 0.8em;
                 }
             }  
