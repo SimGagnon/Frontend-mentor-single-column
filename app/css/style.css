@@ -221,7 +221,7 @@ a {
   }
   .main_header form button {
     margin: 0;
-    padding: 1.18rem 3.875rem;
+    padding: 1.18rem 3.875rem !important;
     font-size: 0.8em;
   }
   .main_image img {
